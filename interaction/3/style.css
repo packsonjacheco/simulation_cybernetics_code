@@ -1,0 +1,43 @@
+body {background-color: rgb(250, 224, 83);
+	font-family: monospace;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: 70px;
+    margin-left: 70px;
+	border: 10px solid black;
+	padding-top: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    padding-left: 70px;
+}
+
+a:link, a:visited {
+    color: black;
+    padding: 10px 10px;
+    text-align: center; 
+    border: solid;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: white;
+}
+
+.Book {
+}
+.Book > section {
+    display: none;
+    white-space: pre-line;
+}
+.Book > section:target {
+    display: block;
+}
+.Book > .intro {
+    display: block;
+}
+.Book > section:target ~ .intro {
+    display: none;
+}
